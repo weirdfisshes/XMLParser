@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<price date_create="2022-12-30">
+	<item_list>
+		<category>
+			<item>
+				<code>2022-000001</code>
+				<name>Роза кустовая красная</name>
+				<sort>Петровка</sort>
+				<group>Кустовые</group>
+				<price>100</price>
+			</item>
+			<item>
+				<code>2022-000001</code>
+				<name>Ромашка полевая</name>
+				<sort>ивановка</sort>
+				<group>Полевые</group>
+				<price>100</price>
+			</item>
+			<item>
+				<code>2022-000001</code>
+				<name>Роза желтая</name>
+				<price>100</price>
+			</item>
+			<item>
+				<code>2022-000001</code>
+				<name>Роза красная</name>
+				<sort>Сидоровка</sort>
+			</item>
+			<item>
+				<code>2022-000001</code>
+				<name>Роза кустовая желтая</name>
+				<group>Кустовые</group>
+				<price>100</price>
+			</item>
+		</category>
+	</item_list>
+</price>
+
+                                                                            

@@ -24,7 +24,7 @@ class Parser():
                         self.get_item_from_node, item
                     )
 
-                    name_total = [get_item('name'), get_item('sort')]
+                    name_total = list(map(get_item, ['name', 'sort']))
 
                     name = ' '.join(
                         filter(

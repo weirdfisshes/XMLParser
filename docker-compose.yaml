@@ -1,0 +1,7 @@
+services:
+  xmlparser:
+    build: .
+    environment:
+      PRICE_URL: # Прямая ссылка на рахив с прайсом
+      DATABASE_URL: # Строка соединения с PostgreSQL
+    network_mode: "host"

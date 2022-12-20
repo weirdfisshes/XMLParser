@@ -1,8 +1,6 @@
 import psycopg2
 
-import logs
-
-# connection_string = 'postgresql://localhost/finances?user=dbadmin&password=dbadmin'
+from . import logs
 
 
 class Database():
@@ -25,14 +23,11 @@ def transaction(function):
 
 
 class FlowersDatabase(Database):
-    try:
-        @transaction
-        def save_item(self, cursor, item):
-            cursor.execute(f'''
-                INSERT INTO flowers (code, name, group_name, price)
-                VALUES ({item.code}, '{item.name}', '{item.group}', {item.price})
-            ''')
+    @transaction
+    def save_item(self, cursor, item):
+        cursor.execute(f'''
+            INSERT INTO flowers (code, name, group_name, price)
+            VALUES ({item.code}, '{item.name}', '{item.group}', {item.price})
+        ''')
 
-            logs.logger.info('Item saved')
-    except Exception as e:
-        logs.logger.info(e)
+        logs.logger.debug('Item saved')
